@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>VMP — 7 Dias</title>
+
+  <!-- AJUSTE MOBILE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.55;
+    }
+
+    .vmp-content {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 36px 18px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #FFD700;
+      font-size: 38px;
+      letter-spacing: 2.5px;
+      margin: 0 0 4px;
+      font-weight: 700;
+    }
+
+    h2 {
+      color: #FFD700;
+      font-size: 22px;
+      letter-spacing: 1.4px;
+      margin: 0 0 40px;
+      font-weight: 500;
+    }
+
+    h3 {
+      color: #FFD700;      
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      margin: 64px 0 22px;
+    }
+
+    h4.subtitulo {
+      color: #ffffff !important;  
+      font-size: 18px;             
+      font-weight: 800;            
+      letter-spacing: 1.2px;
+      margin-top: 40px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin: 14px auto;
+      font-size: 18px;
+      line-height: 1.45;
+      letter-spacing: 0.1px;
+      color: #eaeaea;
+    }
+
+    img {
+      display: block;
+      margin: 30px auto 40px;
+      max-width: 100%;
+      border-radius: 6px;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+    }
+
+    .fim-capitulo {
+      margin-bottom: 72px;
+    }
+
+    .botao {
+      display: inline-block;
+      margin: 70px auto 20px;
+      padding: 18px 52px;
+      background-color: #FFD700;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 999px;
+      font-size: 17px;
+      letter-spacing: 0.5px;
+    }
+
+    .botao:hover {
+      opacity: 0.9;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 32px; }
+      h2 { font-size: 20px; }
+      h3 { font-size: 22px; }
+      h4.subtitulo { font-size: 17px; }
+      p  { font-size: 16px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 🔐 BLOQUEIO DE ACESSO -->
+  <script>
+    if (sessionStorage.getItem("vmp7_acesso") !== "ok") {
+      window.location.href = "acesso.html";
+    }
+  </script>
+
+  <div class="vmp-content">
+
+    <!-- DESCRIÇÃO ANTES DO TÍTULO -->
+    <p>Fortaleça seu centro interno e perceba como a estabilidade interna gera presença silenciosa. Este capítulo ensina a manter firmeza mesmo sob pressão externa.</p>
+
+    <h1>DIA II</h1>
+    <h2>INFLUÊNCIA SILENCIOSA</h2>
+
+    <h3>CENTRO INTERNO INABALÁVEL</h3>
+
+    <!-- Imagem do Capítulo -->
+    <img src="img/img_dia2.png" alt="Imagem do Capítulo 2" class="imagem-vmp">
+
+    <p>
+      O ambiente externo se move.<br>
+      O ritmo interno permanece constante.<br>
+      As reações surgem, mas você mantém firmeza.<br>
+      O estado interno decide antes de qualquer impulso.<br>
+      Nada precisa ser ajustado.<br>
+      O espaço se acomoda à presença.
+    </p>
+
+    <h4 class="subtitulo">REALINHAMENTO:</h4>
+    <p>
+      O ciclo da reatividade nasce da falta de decisão interna.<br>
+      Sem eixo firme, o estado se dispersa.<br>
+      Buscar mudança externa diminui consistência.<br>
+      Cada tentativa fora fragmenta densidade.<br>
+      Quando o centro interno se firma, a influência surge naturalmente.<br>
+      O interno basta.<br>
+      O estado se mantém inabalável.
+    </p>
+
+    <h4 class="subtitulo">INSTALAÇÃO:</h4>
+    <p>
+      Sinta o eixo firme.<br>
+      Não force reação.<br>
+      Permaneça presente.<br>
+      Permaneça.
+    </p>
+
+    <h4 class="subtitulo">REFINAMENTO:</h4>
+    <p>
+      Ambiente tenso, movimentos ao redor fluem sem alterar você.<br>
+      O centro interno se mantém firme.<br>
+      Observa cada detalhe em silêncio.<br>
+      A energia do espaço se ajusta à sua presença.<br>
+      Nada precisa ser anunciado, tudo é sentido.
+    </p>
+
+    <h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+    <p>
+      O centro decide.<br>
+      O estado se mantém firme.
+    </p>
+
+    <div class="fim-capitulo"></div>
+
+    <a href="dia3.html" class="botao">Avançar para o Dia 3</a>
+
+  </div>
+
+</body>
+  </html>
