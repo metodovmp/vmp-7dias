@@ -24,34 +24,46 @@
       text-align: center;
     }
 
+    /* Dia em dourado */
     h1 {
       color: #FFD700;
       font-size: 38px;
       letter-spacing: 2.5px;
-      margin: 0 0 4px;
+      margin: 0 0 8px;
       font-weight: 700;
     }
 
-    h2 {
+    /* Título do capítulo (dourado) */
+    h2.capitulo-titulo {
       color: #FFD700;
       font-size: 22px;
       letter-spacing: 1.4px;
-      margin: 0 0 40px;
+      margin: 0 0 16px;
       font-weight: 500;
     }
 
-    h3 {
-      color: #FFD700;      
+    /* Subtítulo do capítulo (branco) */
+    h3.capitulo-subtitulo {
+      color: #ffffff;
       font-size: 24px;
       font-weight: 700;
       letter-spacing: 1.2px;
-      margin: 64px 0 22px;
+      margin: 0 0 24px;
     }
 
+    /* Descrição curta */
+    .descricao {
+      font-size: 16px;
+      color: #eaeaea;
+      margin-bottom: 36px; /* ajuste aplicado */
+      line-height: 1.45;
+    }
+
+    /* Subtítulos do corpo do capítulo */
     h4.subtitulo {
-      color: #ffffff !important;  
-      font-size: 18px;             
-      font-weight: 800;            
+      color: #ffffff !important;
+      font-size: 18px;
+      font-weight: 800;
       letter-spacing: 1.2px;
       margin-top: 40px;
       margin-bottom: 18px;
@@ -66,7 +78,7 @@
       color: #eaeaea;
     }
 
-    img {
+    .imagem-vmp {
       display: block;
       margin: 30px auto 40px;
       max-width: 100%;
@@ -98,84 +110,91 @@
 
     @media (max-width: 600px) {
       h1 { font-size: 32px; }
-      h2 { font-size: 20px; }
-      h3 { font-size: 22px; }
+      h2.capitulo-titulo { font-size: 20px; }
+      h3.capitulo-subtitulo { font-size: 22px; }
       h4.subtitulo { font-size: 17px; }
-      p  { font-size: 16px; }
+      p, .descricao { font-size: 16px; }
     }
   </style>
 </head>
 
 <body>
 
-<!-- 🔐 BLOQUEIO DE ACESSO -->
-<script>
-  if (sessionStorage.getItem("vmp7_acesso") !== "ok") {
-    window.location.href = "acesso.html";
-  }
-</script>
+  <!-- 🔐 BLOQUEIO DE ACESSO -->
+  <script>
+    if (sessionStorage.getItem("vmp7_acesso") !== "ok") {
+      window.location.href = "acesso.html";
+    }
+  </script>
 
-<div class="vmp-content">
+  <div class="vmp-content">
 
-  <h1>DIA II</h1>
-  <h2>INFLUÊNCIA SILENCIOSA</h2>
+<!-- Título do Dia -->
+<h1>DIA II</h1>
 
-  <!-- DESCRIÇÃO COMPLEMENTAR -->
-  <p>Fortaleça seu centro interno e perceba como a estabilidade interna gera presença silenciosa. Este capítulo ensina a manter firmeza mesmo sob pressão externa.</p>
+<!-- Mini descrição do capítulo -->
+<p class="descricao">
+  Fortaleça seu centro interno e perceba como a estabilidade interna gera presença silenciosa. Este capítulo ensina a manter firmeza mesmo sob pressão externa.
+</p>
 
-    <h3>CENTRO INTERNO INABALÁVEL</h3>
+<!-- Título do capítulo (dourado) -->
+<h2 class="capitulo-titulo">CENTRO INTERNO INABALÁVEL</h2>
 
-    <!-- Imagem do Capítulo -->
-    <img src="img/img_dia2.png" alt="Imagem do Capítulo 2" class="imagem-vmp">
+<!-- Subtítulo do capítulo (branco) -->
+<h3 class="capitulo-subtitulo">INFLUÊNCIA SILENCIOSA</h3>
 
-    <p>
-      O ambiente externo se move.<br>
-      O ritmo interno permanece constante.<br>
-      As reações surgem, mas você mantém firmeza.<br>
-      O estado interno decide antes de qualquer impulso.<br>
-      Nada precisa ser ajustado.<br>
-      O espaço se acomoda à presença.
-    </p>
+<!-- Placeholder de imagem -->
+<img src="img/placeholder.png" alt="" class="imagem-vmp">
 
-    <h4 class="subtitulo">REALINHAMENTO:</h4>
-    <p>
-      O ciclo da reatividade nasce da falta de decisão interna.<br>
-      Sem eixo firme, o estado se dispersa.<br>
-      Buscar mudança externa diminui consistência.<br>
-      Cada tentativa fora fragmenta densidade.<br>
-      Quando o centro interno se firma, a influência surge naturalmente.<br>
-      O interno basta.<br>
-      O estado se mantém inabalável.
-    </p>
+<!-- Texto do capítulo -->
+<p>
+  O ambiente externo se move.<br>
+  O ritmo interno permanece constante.<br>
+  As reações surgem, mas você mantém firmeza.<br>
+  O estado interno decide antes de qualquer impulso.<br>
+  Nada precisa ser ajustado.<br>
+  O espaço se acomoda à presença.
+</p>
 
-    <h4 class="subtitulo">INSTALAÇÃO:</h4>
-    <p>
-      Sinta o eixo firme.<br>
-      Não force reação.<br>
-      Permaneça presente.<br>
-      Permaneça.
-    </p>
+<h4 class="subtitulo">REALINHAMENTO:</h4>
+<p>
+  O ciclo da reatividade nasce da falta de decisão interna.<br>
+  Sem eixo firme, o estado se dispersa.<br>
+  Buscar mudança externa diminui consistência.<br>
+  Cada tentativa fora fragmenta densidade.<br>
+  Quando o centro interno se firma, a influência surge naturalmente.<br>
+  O interno basta.<br>
+  O estado se mantém inabalável.
+</p>
 
-    <h4 class="subtitulo">REFINAMENTO:</h4>
-    <p>
-      Ambiente tenso, movimentos ao redor fluem sem alterar você.<br>
-      O centro interno se mantém firme.<br>
-      Observa cada detalhe em silêncio.<br>
-      A energia do espaço se ajusta à sua presença.<br>
-      Nada precisa ser anunciado, tudo é sentido.
-    </p>
+<h4 class="subtitulo">INSTALAÇÃO:</h4>
+<p>
+  Sinta o eixo firme.<br>
+  Não force reação.<br>
+  Permaneça presente.<br>
+  Permaneça.
+</p>
 
-    <h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-    <p>
-      O centro decide.<br>
-      O estado se mantém firme.
-    </p>
+<h4 class="subtitulo">REFINAMENTO:</h4>
+<p>
+  Ambiente tenso, movimentos ao redor fluem sem alterar você.<br>
+  O centro interno se mantém firme.<br>
+  Observa cada detalhe em silêncio.<br>
+  A energia do espaço se ajusta à sua presença.<br>
+  Nada precisa ser anunciado, tudo é sentido.
+</p>
 
-    <div class="fim-capitulo"></div>
+<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+<p>
+  O centro decide.<br>
+  O estado se mantém firme.
+</p>
 
-    <a href="dia3.html" class="botao">Avançar para o Dia 3</a>
+<div class="fim-capitulo"></div>
 
-  </div>
+<!-- Botão avançar -->
+<a href="dia3.html" class="botao">Avançar para o Dia III</a>
 
+  </div> <!-- Fecha .vmp-content -->
 </body>
-  </html>
+</html>
