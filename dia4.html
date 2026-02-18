@@ -24,30 +24,42 @@
       text-align: center;
     }
 
+    /* Dia em dourado */
     h1 {
       color: #FFD700;
       font-size: 38px;
       letter-spacing: 2.5px;
-      margin: 0 0 4px;
+      margin: 0 0 8px;
       font-weight: 700;
     }
 
-    h2 {
+    /* Título do capítulo (dourado) */
+    h2.capitulo-titulo {
       color: #FFD700;
       font-size: 22px;
       letter-spacing: 1.4px;
-      margin: 0 0 40px;
+      margin: 0 0 16px;
       font-weight: 500;
     }
 
-    h3 {
-      color: #FFD700;
+    /* Subtítulo do capítulo (branco) */
+    h3.capitulo-subtitulo {
+      color: #ffffff;
       font-size: 24px;
       font-weight: 700;
       letter-spacing: 1.2px;
-      margin: 64px 0 22px;
+      margin: 0 0 24px;
     }
 
+    /* Descrição curta */
+    .descricao {
+      font-size: 16px;
+      color: #eaeaea;
+      margin-bottom: 36px; /* ajuste aplicado */
+      line-height: 1.45;
+    }
+
+    /* Subtítulos do corpo do capítulo */
     h4.subtitulo {
       color: #ffffff !important;
       font-size: 18px;
@@ -66,7 +78,7 @@
       color: #eaeaea;
     }
 
-    img {
+    .imagem-vmp {
       display: block;
       margin: 30px auto 40px;
       max-width: 100%;
@@ -98,10 +110,10 @@
 
     @media (max-width: 600px) {
       h1 { font-size: 32px; }
-      h2 { font-size: 20px; }
-      h3 { font-size: 22px; }
+      h2.capitulo-titulo { font-size: 20px; }
+      h3.capitulo-subtitulo { font-size: 22px; }
       h4.subtitulo { font-size: 17px; }
-      p  { font-size: 16px; }
+      p, .descricao { font-size: 16px; }
     }
   </style>
 </head>
@@ -117,54 +129,73 @@
 
   <div class="vmp-content">
 
-    <!-- Descrição do Capítulo -->
-    <p>Capítulo 4 — Assentamento Sob Pressão: aprenda a manter seu eixo firme e a estabilidade interna diante de qualquer tensão externa.</p>
+<!-- Título do Dia -->
+<h1>DIA IV</h1>
 
-    <!-- Título do Dia -->
-    <h1>DIA IV</h1>
-    <h2>DENSIDADE QUE NÃO CEDE</h2>
+<!-- Mini descrição do capítulo -->
+<p class="descricao">
+  Aprenda a manter firmeza e densidade interna mesmo sob pressão externa crescente. Este capítulo ensina como assentar-se sem ceder à instabilidade ao redor.
+</p>
 
-    <!-- Texto principal -->
-    <p>Movimentos ao redor aceleram.<br>
-    Pressão cresce silenciosa.<br>
-    Você mantém o eixo firme.<br>
-    O corpo não reage por impulso.<br>
-    Nada se apressa.<br>
-    O campo ajusta-se naturalmente.</p>
+<!-- Título do capítulo (dourado) -->
+<h2 class="capitulo-titulo">ASSENTAMENTO SOB PRESSÃO</h2>
 
-    <h4 class="subtitulo">REALINHAMENTO:</h4>
-    <p> A pressão surge no grupo.<br>
-    O eixo vacila levemente.<br>
-    A densidade interna sustenta.<br>
-    Tentativas externas não alteram.<br>
-    Assentar-se mantém coerência silenciosa.<br>
-    O centro permanece fixo.<br>
-    O externo se firma.<br>
-    O ritmo desacelera. </p>
+<!-- Subtítulo do capítulo (branco) -->
+<h3 class="capitulo-subtitulo">DENSIDADE QUE NÃO CEDE</h3>
 
-    <h4 class="subtitulo">INSTALAÇÃO:</h4>
-    <p>Sinta densidade interna.<br>
-    Mantenha centro firme.<br>
-    Não ceda à pressão externa.<br>
-    O estado se ancora.</p>
+<!-- Placeholder de imagem -->
+<img src="img/placeholder.png" alt="" class="imagem-vmp">
 
-    <h4 class="subtitulo">REFINAMENTO:</h4>
-    <p>Sala em movimento constante.<br>
-    O ritmo interno não oscila.<br>
-    Olhares se ajustam ao seu eixo.<br>
-    Você permanece firme por dentro.<br>
-    O ambiente se reorganiza silencioso.</p>
+<!-- Texto do capítulo -->
+<p>
+  Movimentos ao redor aceleram.<br>
+  Pressão cresce silenciosa.<br>
+  Você mantém o eixo firme.<br>
+  O corpo não reage por impulso.<br>
+  Nada se apressa.<br>
+  O campo ajusta-se naturalmente.
+</p>
 
-    <h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-    <p>O estado define o ritmo.<br>
-    O externo se firma.</p>
+<h4 class="subtitulo">REALINHAMENTO:</h4>
+<p>
+  A pressão surge no grupo.<br>
+  O eixo vacila levemente.<br>
+  A densidade interna sustenta.<br>
+  Tentativas externas não alteram.<br>
+  Assentar-se mantém coerência silenciosa.<br>
+  O centro permanece fixo.<br>
+  O externo se firma.<br>
+  O ritmo desacelera.
+</p>
 
-    <div class="fim-capitulo"></div>
+<h4 class="subtitulo">INSTALAÇÃO:</h4>
+<p>
+  Sinta densidade interna.<br>
+  Mantenha centro firme.<br>
+  Não ceda à pressão externa.<br>
+  O estado se ancora.
+</p>
 
-    <!-- Botão para avançar -->
-    <a href="dia5.html" class="botao">Avançar para o Dia V</a>
+<h4 class="subtitulo">REFINAMENTO:</h4>
+<p>
+  Sala em movimento constante.<br>
+  O ritmo interno não oscila.<br>
+  Olhares se ajustam ao seu eixo.<br>
+  Você permanece firme por dentro.<br>
+  O ambiente se reorganiza silencioso.
+</p>
 
-  </div>
+<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+<p>
+  O estado define o ritmo.<br>
+  O externo se firma.
+</p>
 
+<div class="fim-capitulo"></div>
+
+<!-- Botão avançar -->
+<a href="dia5.html" class="botao">Avançar para o Dia V</a>
+
+</div> <!-- Fecha .vmp-content -->
 </body>
-                                       </html>
+</html> 
