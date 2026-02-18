@@ -24,7 +24,7 @@
       text-align: center;
     }
 
-    /* Título do Dia */
+    /* Dia em dourado */
     h1 {
       color: #FFD700;
       font-size: 38px;
@@ -33,18 +33,18 @@
       font-weight: 700;
     }
 
-    /* Subtítulo do capítulo em branco */
-    h2 {
-      color: #ffffff;
+    /* Título do capítulo (dourado) */
+    h2.capitulo-titulo {
+      color: #FFD700;
       font-size: 22px;
       letter-spacing: 1.4px;
       margin: 0 0 16px;
       font-weight: 500;
     }
 
-    /* Título complementar do capítulo (dourado) */
-    h3 {
-      color: #FFD700;
+    /* Subtítulo do capítulo (branco) */
+    h3.capitulo-subtitulo {
+      color: #ffffff;
       font-size: 24px;
       font-weight: 700;
       letter-spacing: 1.2px;
@@ -59,6 +59,7 @@
       line-height: 1.45;
     }
 
+    /* Subtítulos do corpo do capítulo */
     h4.subtitulo {
       color: #ffffff !important;
       font-size: 18px;
@@ -109,8 +110,8 @@
 
     @media (max-width: 600px) {
       h1 { font-size: 32px; }
-      h2 { font-size: 20px; }
-      h3 { font-size: 22px; }
+      h2.capitulo-titulo { font-size: 20px; }
+      h3.capitulo-subtitulo { font-size: 22px; }
       h4.subtitulo { font-size: 17px; }
       p, .descricao { font-size: 16px; }
     }
@@ -131,21 +132,21 @@
     <!-- Título do Dia -->
     <h1>DIA I</h1>
 
-    <!-- Descrição do Capítulo -->
+    <!-- Descrição do capítulo -->
     <p class="descricao">
       Descubra que a força que você procura já existe dentro de você. Este capítulo ativa o seu eixo interno e prepara o terreno para presença perceptível.
     </p>
 
-    <!-- Subtítulo do capítulo (branco) -->
-    <h2>O DOMÍNIO JÁ ESTÁ DENTRO DE VOCÊ</h2>
+    <!-- Título do capítulo (dourado) -->
+    <h2 class="capitulo-titulo">O DOMÍNIO JÁ ESTÁ DENTRO DE VOCÊ</h2>
 
-    <!-- Título complementar do capítulo (dourado) -->
-    <h3>EIXO FIRME SOB PRESSÃO</h3>
+    <!-- Subtítulo do capítulo (branco) -->
+    <h3 class="capitulo-subtitulo">EIXO FIRME SOB PRESSÃO</h3>
 
     <!-- Imagem do capítulo -->
     <img src="img/dia1.png" alt="Imagem do Capítulo 1" class="imagem-vmp">
 
-    <!-- Texto principal -->
+    <!-- Texto do capítulo -->
     <p>
       O domínio parece sempre algo a conquistar.<br>
       Tentar dominar o externo aumenta a luta.<br>
