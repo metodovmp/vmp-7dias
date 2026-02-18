@@ -3,49 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <title>VMP — 7 Dias</title>
+
+  <!-- AJUSTE MOBILE -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    body { background-color: #000; color: #fff; font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.55; }
-    .vmp-content { max-width:640px; margin:0 auto; padding:36px 18px; text-align:center; }
-    h1 { color:#FFD700; font-size:38px; letter-spacing:2.5px; margin:0 0 8px; font-weight:700; }
-    h2 { color:#ffffff; font-size:22px; letter-spacing:1.4px; margin:0 0 16px; font-weight:500; }
-    h3 { color:#FFD700; font-size:24px; font-weight:700; letter-spacing:1.2px; margin:0 0 24px; }
-    .descricao { font-size:16px; color:#eaeaea; margin-bottom:20px; line-height:1.45; }
-    h4.subtitulo { color:#ffffff !important; font-size:18px; font-weight:800; letter-spacing:1.2px; margin-top:40px; margin-bottom:18px; text-transform:uppercase; }
-    p { margin:14px auto; font-size:18px; line-height:1.45; letter-spacing:0.1px; color:#eaeaea; }
-    .imagem-vmp { display:block; margin:30px auto 40px; max-width:100%; border-radius:6px; aspect-ratio:4/5; object-fit:cover; }
-    .fim-capitulo { margin-bottom:72px; }
-    .botao { display:inline-block; margin:70px auto 20px; padding:18px 52px; background-color:#FFD700; color:#000; text-decoration:none; font-weight:bold; border-radius:999px; font-size:17px; letter-spacing:0.5px; }
-    .botao:hover { opacity:0.9; }
-    @media(max-width:600px){ h1{font-size:32px;} h2{font-size:20px;} h3{font-size:22px;} h4.subtitulo{font-size:17px;} p,.descricao{font-size:16px;} }
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.55;
+    }
+
+    .vmp-content {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 36px 18px;
+      text-align: center;
+    }
+
+    /* Título do Dia */
+    h1 {
+      color: #FFD700;
+      font-size: 38px;
+      letter-spacing: 2.5px;
+      margin: 0 0 8px;
+      font-weight: 700;
+    }
+
+    /* Subtítulo do capítulo em branco */
+    h2 {
+      color: #ffffff;
+      font-size: 22px;
+      letter-spacing: 1.4px;
+      margin: 0 0 16px;
+      font-weight: 500;
+    }
+
+    /* Título complementar do capítulo (dourado) */
+    h3 {
+      color: #FFD700;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      margin: 0 0 24px;
+    }
+
+    /* Descrição curta */
+    .descricao {
+      font-size: 16px;
+      color: #eaeaea;
+      margin-bottom: 20px;
+      line-height: 1.45;
+    }
+
+    h4.subtitulo {
+      color: #ffffff !important;
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      margin-top: 40px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin: 14px auto;
+      font-size: 18px;
+      line-height: 1.45;
+      letter-spacing: 0.1px;
+      color: #eaeaea;
+    }
+
+    .imagem-vmp {
+      display: block;
+      margin: 30px auto 40px;
+      max-width: 100%;
+      border-radius: 6px;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+    }
+
+    .fim-capitulo {
+      margin-bottom: 72px;
+    }
+
+    .botao {
+      display: inline-block;
+      margin: 70px auto 20px;
+      padding: 18px 52px;
+      background-color: #FFD700;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 999px;
+      font-size: 17px;
+      letter-spacing: 0.5px;
+    }
+
+    .botao:hover {
+      opacity: 0.9;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 32px; }
+      h2 { font-size: 20px; }
+      h3 { font-size: 22px; }
+      h4.subtitulo { font-size: 17px; }
+      p, .descricao { font-size: 16px; }
+    }
   </style>
 </head>
+
 <body>
 
+  <!-- 🔐 BLOQUEIO DE ACESSO -->
   <script>
-    if(sessionStorage.getItem("vmp7_acesso")!=="ok"){window.location.href="acesso.html";}
+    if (sessionStorage.getItem("vmp7_acesso") !== "ok") {
+      window.location.href = "acesso.html";
+    }
   </script>
 
   <div class="vmp-content">
 
+    <!-- Título do Dia -->
     <h1>DIA I</h1>
 
-    <p class="descricao">Descubra que a força que você procura já existe dentro de você. Este capítulo ativa o seu eixo interno e prepara o terreno para presença perceptível.</p>
+    <!-- Descrição do Capítulo -->
+    <p class="descricao">
+      Descubra que a força que você procura já existe dentro de você. Este capítulo ativa o seu eixo interno e prepara o terreno para presença perceptível.
+    </p>
 
+    <!-- Subtítulo do capítulo (branco) -->
     <h2>O DOMÍNIO JÁ ESTÁ DENTRO DE VOCÊ</h2>
+
+    <!-- Título complementar do capítulo (dourado) -->
     <h3>EIXO FIRME SOB PRESSÃO</h3>
 
-    .imagem-vmp {
-display: block;
-margin: 30px auto 40px;
-max-width: 100%;
-border-radius: 6px;
-aspect-ratio: 4 / 5;
-object-fit: cover;
-}
- <img src="img/dia1.png" alt="Imagem do Capítulo 1" class="imagem-vmp">  ?
+    <!-- Imagem do capítulo -->
+    <img src="img/dia1.png" alt="Imagem do Capítulo 1" class="imagem-vmp">
 
+    <!-- Texto principal -->
     <p>
       O domínio parece sempre algo a conquistar.<br>
       Tentar dominar o externo aumenta a luta.<br>
@@ -68,17 +168,34 @@ object-fit: cover;
     </p>
 
     <h4 class="subtitulo">INSTALAÇÃO:</h4>
-    <p>Não procure fora.<br>Não antecipe.<br>O centro existe.<br>O domínio fica.</p>
+    <p>
+      Não procure fora.<br>
+      Não antecipe.<br>
+      O centro existe.<br>
+      O domínio fica.
+    </p>
 
     <h4 class="subtitulo">REFINAMENTO:</h4>
-    <p>Nada novo é adicionado.<br>Nada é aprendido.<br>Algo antigo se organiza.<br>Você reconhece.<br>E sustenta.</p>
+    <p>
+      Nada novo é adicionado.<br>
+      Nada é aprendido.<br>
+      Algo antigo se organiza.<br>
+      Você reconhece.<br>
+      E sustenta.
+    </p>
 
     <h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-    <p>O domínio interno é a chave.<br>O eixo mantém controle.</p>
+    <p>
+      O domínio interno é a chave.<br>
+      O eixo mantém controle.
+    </p>
 
     <div class="fim-capitulo"></div>
+
+    <!-- Botão avançar -->
     <a href="dia2.html" class="botao">Avançar para o Dia II</a>
 
   </div>
+
 </body>
 </html>
