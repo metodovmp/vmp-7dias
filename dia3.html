@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>VMP — Dia III</title>
+  <title>VMP — 7 Dias</title>
 
   <!-- AJUSTE MOBILE -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,34 +24,46 @@
       text-align: center;
     }
 
+    /* Dia em dourado */
     h1 {
       color: #FFD700;
       font-size: 38px;
       letter-spacing: 2.5px;
-      margin: 0 0 4px;
+      margin: 0 0 8px;
       font-weight: 700;
     }
 
-    h2 {
+    /* Título do capítulo (dourado) */
+    h2.capitulo-titulo {
       color: #FFD700;
       font-size: 22px;
       letter-spacing: 1.4px;
-      margin: 0 0 40px;
+      margin: 0 0 16px;
       font-weight: 500;
     }
 
-    h3 {
-      color: #FFD700;      
+    /* Subtítulo do capítulo (branco) */
+    h3.capitulo-subtitulo {
+      color: #ffffff;
       font-size: 24px;
       font-weight: 700;
       letter-spacing: 1.2px;
-      margin: 64px 0 22px;
+      margin: 0 0 24px;
     }
 
+    /* Descrição curta */
+    .descricao {
+      font-size: 16px;
+      color: #eaeaea;
+      margin-bottom: 36px; /* ajuste aplicado */
+      line-height: 1.45;
+    }
+
+    /* Subtítulos do corpo do capítulo */
     h4.subtitulo {
-      color: #ffffff !important;  
-      font-size: 18px;             
-      font-weight: 800;            
+      color: #ffffff !important;
+      font-size: 18px;
+      font-weight: 800;
       letter-spacing: 1.2px;
       margin-top: 40px;
       margin-bottom: 18px;
@@ -66,7 +78,7 @@
       color: #eaeaea;
     }
 
-    img {
+    .imagem-vmp {
       display: block;
       margin: 30px auto 40px;
       max-width: 100%;
@@ -98,10 +110,10 @@
 
     @media (max-width: 600px) {
       h1 { font-size: 32px; }
-      h2 { font-size: 20px; }
-      h3 { font-size: 22px; }
+      h2.capitulo-titulo { font-size: 20px; }
+      h3.capitulo-subtitulo { font-size: 22px; }
       h4.subtitulo { font-size: 17px; }
-      p  { font-size: 16px; }
+      p, .descricao { font-size: 16px; }
     }
   </style>
 </head>
@@ -117,67 +129,74 @@
 
   <div class="vmp-content">
 
-    <!-- Título do dia -->
-    <h1>DIA III</h1>
-    <h2>MICRO PAUSA, GRANDE CONTROLE</h2>
 
-    <!-- Descrição do capítulo -->
-    <p>Aprenda a utilizar pequenas pausas para ampliar seu controle interno. Este capítulo mostra como momentos sutis de silêncio fortalecem sua presença perceptível.</p>
+<!-- Título do Dia -->
+<h1>DIA III</h1>
 
-    <!-- Capítulo -->
-    <h3>A PAUSA QUE ALTERA PERCEPÇÕES</h3>
+<!-- Mini descrição do capítulo -->
+<p class="descricao">
+  Aprenda a usar a pausa estratégica para reforçar presença e controle interno, mantendo o ritmo natural sem se deixar influenciar pelo externo.
+</p>
 
-    <!-- Imagem do capítulo -->
-    <img src="img/img_dia3.png" alt="Imagem do Capítulo 3" class="imagem-vmp">
+<!-- Título do capítulo (dourado) -->
+<h2 class="capitulo-titulo">MICRO PAUSA, GRANDE CONTROLE</h2>
 
-    <p>O gesto interrompe antes de completar.<br>
-    O espaço permanece suspenso.<br>
-    Você nota a pausa sem alterar ritmo.<br>
-    O tempo interno desacelera.<br>
-    Nada exige ação.<br>
-    O ambiente observa silencioso.</p>
+<!-- Subtítulo do capítulo (branco) -->
+<h3 class="capitulo-subtitulo">A PAUSA QUE ALTERA PERCEPÇÕES</h3>
 
-    <h4 class="subtitulo">REALINHAMENTO:</h4>
-    <p>
-      A contenção cria densidade interna.<br>
-      Quando o eixo oscila, o externo tenta preencher.<br>
-      Micro pausas reforçam presença natural.<br>
-      O desalinhamento fragmenta percepção externa.<br>
-      O centro mantém integridade.<br>
-      O silêncio sustenta coerência.<br>
-      A ação nasce do interno, não do gesto.<br>
-      A presença se mantém no espaço.
-    </p>
+<!-- Placeholder de imagem -->
+<img src="img/placeholder.png" alt="" class="imagem-vmp">
 
-    <h4 class="subtitulo">INSTALAÇÃO:</h4>
-    <p>
-      Interrompa ação.<br>
-      Sinta o ritmo interno desacelerar.<br>
-      Não ceda à pressa.<br>
-      Permaneça.
-    </p>
+<!-- Texto do capítulo -->
+<p>
+  O gesto interrompe antes de completar.<br>
+  O espaço permanece suspenso.<br>
+  Você nota a pausa sem alterar ritmo.<br>
+  O tempo interno desacelera.<br>
+  Nada exige ação.<br>
+  O ambiente observa silencioso.
+</p>
 
-    <h4 class="subtitulo">REFINAMENTO:</h4>
-    <p>
-      Um gesto é interrompido antes de completar.<br>
-      O espaço suspende a presença.<br>
-      Movimentos ao redor desaceleram.<br>
-      Você percebe a pausa sem reagir.<br>
-      O campo se estabiliza.
-    </p>
+<h4 class="subtitulo">REALINHAMENTO:</h4>
+<p>
+  A contenção cria densidade interna.<br>
+  Quando o eixo oscila, o externo tenta preencher.<br>
+  Micro pausas reforçam presença natural.<br>
+  O desalinhamento fragmenta percepção externa.<br>
+  O centro mantém integridade.<br>
+  O silêncio sustenta coerência.<br>
+  A ação nasce do interno, não do gesto.<br>
+  A presença se mantém no espaço.
+</p>
 
-    <h4 class="subtitulo">SUSTENTAÇÃO:</h4>
-    <p>
-      A pausa mantém presença.<br>
-      O movimento se organiza.
-    </p>
+<h4 class="subtitulo">INSTALAÇÃO:</h4>
+<p>
+  Interrompa ação.<br>
+  Sinta o ritmo interno desacelerar.<br>
+  Não ceda à pressa.<br>
+  Permaneça.
+</p>
 
-    <div class="fim-capitulo"></div>
+<h4 class="subtitulo">REFINAMENTO:</h4>
+<p>
+  Um gesto é interrompido antes de completar.<br>
+  O espaço suspende a presença.<br>
+  Movimentos ao redor desaceleram.<br>
+  Você percebe a pausa sem reagir.<br>
+  O campo se estabiliza.
+</p>
 
-    <!-- Botão para avançar -->
-    <a href="dia4.html" class="botao">Avançar para o DIA IV</a>
+<h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+<p>
+  A pausa mantém presença.<br>
+  O movimento se organiza.
+</p>
 
-  </div>
+<div class="fim-capitulo"></div>
 
+<!-- Botão avançar -->
+<a href="dia4.html" class="botao">Avançar para o Dia IV</a>
+
+</div> <!-- Fecha .vmp-content -->
 </body>
-      </html>
+</html>
