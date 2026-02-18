@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>VMP — Dia III</title>
+
+  <!-- AJUSTE MOBILE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.55;
+    }
+
+    .vmp-content {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 36px 18px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #FFD700;
+      font-size: 38px;
+      letter-spacing: 2.5px;
+      margin: 0 0 4px;
+      font-weight: 700;
+    }
+
+    h2 {
+      color: #FFD700;
+      font-size: 22px;
+      letter-spacing: 1.4px;
+      margin: 0 0 40px;
+      font-weight: 500;
+    }
+
+    h3 {
+      color: #FFD700;      
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      margin: 64px 0 22px;
+    }
+
+    h4.subtitulo {
+      color: #ffffff !important;  
+      font-size: 18px;             
+      font-weight: 800;            
+      letter-spacing: 1.2px;
+      margin-top: 40px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin: 14px auto;
+      font-size: 18px;
+      line-height: 1.45;
+      letter-spacing: 0.1px;
+      color: #eaeaea;
+    }
+
+    img {
+      display: block;
+      margin: 30px auto 40px;
+      max-width: 100%;
+      border-radius: 6px;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+    }
+
+    .fim-capitulo {
+      margin-bottom: 72px;
+    }
+
+    .botao {
+      display: inline-block;
+      margin: 70px auto 20px;
+      padding: 18px 52px;
+      background-color: #FFD700;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 999px;
+      font-size: 17px;
+      letter-spacing: 0.5px;
+    }
+
+    .botao:hover {
+      opacity: 0.9;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 32px; }
+      h2 { font-size: 20px; }
+      h3 { font-size: 22px; }
+      h4.subtitulo { font-size: 17px; }
+      p  { font-size: 16px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 🔐 BLOQUEIO DE ACESSO -->
+  <script>
+    if (sessionStorage.getItem("vmp7_acesso") !== "ok") {
+      window.location.href = "acesso.html";
+    }
+  </script>
+
+  <div class="vmp-content">
+
+    <!-- Título do dia -->
+    <h1>DIA III</h1>
+    <h2>MICRO PAUSA, GRANDE CONTROLE</h2>
+
+    <!-- Descrição do capítulo -->
+    <p>Aprenda a utilizar pequenas pausas para ampliar seu controle interno. Este capítulo mostra como momentos sutis de silêncio fortalecem sua presença perceptível.</p>
+
+    <!-- Capítulo -->
+    <h3>A PAUSA QUE ALTERA PERCEPÇÕES</h3>
+
+    <!-- Imagem do capítulo -->
+    <img src="img/img_dia3.png" alt="Imagem do Capítulo 3" class="imagem-vmp">
+
+    <p>O gesto interrompe antes de completar.<br>
+    O espaço permanece suspenso.<br>
+    Você nota a pausa sem alterar ritmo.<br>
+    O tempo interno desacelera.<br>
+    Nada exige ação.<br>
+    O ambiente observa silencioso.</p>
+
+    <h4 class="subtitulo">REALINHAMENTO:</h4>
+    <p>
+      A contenção cria densidade interna.<br>
+      Quando o eixo oscila, o externo tenta preencher.<br>
+      Micro pausas reforçam presença natural.<br>
+      O desalinhamento fragmenta percepção externa.<br>
+      O centro mantém integridade.<br>
+      O silêncio sustenta coerência.<br>
+      A ação nasce do interno, não do gesto.<br>
+      A presença se mantém no espaço.
+    </p>
+
+    <h4 class="subtitulo">INSTALAÇÃO:</h4>
+    <p>
+      Interrompa ação.<br>
+      Sinta o ritmo interno desacelerar.<br>
+      Não ceda à pressa.<br>
+      Permaneça.
+    </p>
+
+    <h4 class="subtitulo">REFINAMENTO:</h4>
+    <p>
+      Um gesto é interrompido antes de completar.<br>
+      O espaço suspende a presença.<br>
+      Movimentos ao redor desaceleram.<br>
+      Você percebe a pausa sem reagir.<br>
+      O campo se estabiliza.
+    </p>
+
+    <h4 class="subtitulo">SUSTENTAÇÃO:</h4>
+    <p>
+      A pausa mantém presença.<br>
+      O movimento se organiza.
+    </p>
+
+    <div class="fim-capitulo"></div>
+
+    <!-- Botão para avançar -->
+    <a href="dia4.html" class="botao">Avançar para o DIA IV</a>
+
+  </div>
+
+</body>
+      </html>
