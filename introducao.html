@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>VMP — 7 Dias</title>
 
-  <!-- AJUSTE MOBILE -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -19,7 +18,7 @@
     }
 
     .metodo {
-      color: #FFD700;
+      color: rgba(255,255,255,0.45);
       font-size: 14px;
       letter-spacing: 2px;
       margin-bottom: 6px;
@@ -32,7 +31,7 @@
     }
 
     .fase {
-      color: #FFD700;
+      color: rgba(255,255,255,0.45);
       font-size: 15px;
       letter-spacing: 2px;
       margin-top: 12px;
@@ -56,15 +55,21 @@
       color: #eaeaea;
     }
 
-    .imagem-vmp {
-      display: block;
-      width: auto;
-      max-width: 420px;
-      height: auto;
-      aspect-ratio: 4 / 5;
-      object-fit: cover;
-      margin: 22px auto 20px;
-      border-radius: 6px;
+    /* ===== IMAGEM 4:5 GARANTIDA ===== */
+    .imagem{
+      display:block;
+      margin:30px auto 40px;
+      width:100%;
+      max-width:420px;
+
+      aspect-ratio:4/5;
+      min-height:260px;
+
+      object-fit:cover;
+      border-radius:8px;
+
+      background:#111;
+      border:1px solid #FFD700;
     }
 
     .botao {
@@ -89,7 +94,6 @@
 
 <body>
 
-  <!-- 🔐 BLOQUEIO DE ACESSO -->
   <script>
     if (sessionStorage.getItem("vmp7_acesso") !== "ok") {
       window.location.href = "acesso.html";
@@ -99,12 +103,12 @@
   <!-- Cabeçalho -->
   <div class="metodo">MÉTODO VMP</div>
   <h1 class="main-title">VMP — Ativação da Presença Silenciosa</h1>
-  <div class="fase">INTRODUÇÃO — 7 DIAS</div>
+  <div class="fase">7 DIAS DE REALINHAMENTO DA SUA PRESENÇA</div>
 
-  <!-- Imagem -->
-  <img src="img/Imagem000000006666.png" alt="Imagem VMP 7 Dias" class="imagem-vmp">
+  <!-- Imagem ajustada no padrão do Upsell -->
+  <img src="img/plancheco1.jpg" class="imagem"
+  onerror="this.src='img/placeholder.png'">
 
-  <!-- Texto principal -->
   <p>Não é sobre sedução.<br>É sobre alinhamento.</p>
 
   <p>Não é sobre aprender frases.<br>É sobre retirar ruídos.</p>
@@ -124,7 +128,6 @@
   <p>Você ajusta o interno.<br>
   O externo responde.</p>
 
-  <!-- Lista de ativação -->
   <div class="lista">
     <p>Em 7 dias você irá:</p>
 
@@ -141,9 +144,9 @@
   O externo reflete.<br>
   A presença acontece.</p>
 
-  <p style="margin-top:30px;">A travessia começa agora.</p>
+  <p style="margin-top:30px; color:#FFD700;">A TRAVESSIA COMEÇA AGORA.</p>
 
-  <a href="dia1.html" class="botao">Iniciar Dia 1</a>
+  <a href="dia1.html" class="botao">INICIAR DIA 1</a>
 
 </body>
-  </html>
+</html>
