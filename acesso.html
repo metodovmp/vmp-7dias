@@ -32,8 +32,9 @@
       text-align: center;
     }
 
+    /* 👇 CINZA TRANSPARENTE */
     .linha-superior {
-      color: #fff;
+      color: rgba(255,255,255,0.45);
       font-size: 13px;
       letter-spacing: 2px;
     }
@@ -62,11 +63,12 @@
       opacity: 0.9;
     }
 
+    /* 👇 TEXTO DO BOTÃO CINZA TRANSPARENTE */
     .btn-codigo {
       width: 100%;
       padding: 14px;
       background: #000;
-      color: #FFF;
+      color: rgba(255,255,255,0.45);
       font-weight: bold;
       font-size: 16px;
       border: 2px solid #FFD700;
@@ -99,10 +101,7 @@
 
       if (senhaDigitada === senhaCorreta) {
 
-        // 🔐 grava sessão correta alinhada com o index
         sessionStorage.setItem("vmp7_acesso", "ok");
-
-        // redireciona para a página de confirmação
         window.location.href = "index.html";
 
       } else {
