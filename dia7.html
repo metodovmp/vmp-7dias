@@ -1,206 +1,221 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>VMP — 7 Dias</title>
+<meta charset="UTF-8">
+<title>VMP — 7 Dias</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- AJUSTE MOBILE -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+  background:#000;
+  color:#fff;
+  font-family:Arial,sans-serif;
+  margin:0;
+  padding:0;
+  line-height:1.55;
+}
 
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.55;
-    }
+.vmp-content{
+  max-width:640px;
+  margin:0 auto;
+  padding:36px 18px;
+  text-align:center;
+}
 
-    .vmp-content {
-      max-width: 640px;
-      margin: 0 auto;
-      padding: 36px 18px;
-      text-align: center;
-    }
+/* DIA */
+h1{
+  color:#FFD700;
+  font-size:38px;
+  letter-spacing:2.5px;
+  margin:0 0 20px;
+  font-weight:700;
+}
 
-    /* Dia em dourado */
-    h1 {
-      color: #FFD700;
-      font-size: 38px;
-      letter-spacing: 2.5px;
-      margin: 0 0 8px;
-      font-weight: 700;
-    }
+/* BLOCO DE CAPÍTULO */
+.ativacao{
+  margin-bottom:80px;
+}
 
-    /* Título do capítulo (dourado) */
-    h2.capitulo-titulo {
-      color: #FFD700;
-      font-size: 22px;
-      letter-spacing: 1.4px;
-      margin: 0 0 16px;
-      font-weight: 500;
-    }
+/* Mini descrição */
+.mini-descricao{
+  color:rgba(255,255,255,0.45);
+  font-size:16px;
+  margin-bottom:28px;
+  line-height:1.5;
+}
 
-    /* Subtítulo do capítulo (branco) */
-    h3.capitulo-subtitulo {
-      color: #ffffff;
-      font-size: 24px;
-      font-weight: 700;
-      letter-spacing: 1.2px;
-      margin: 0 0 24px;
-    }
+/* Títulos */
+h2.capitulo-titulo{
+  color:#FFD700;
+  font-size:22px;
+  letter-spacing:1.4px;
+  margin:0 0 16px;
+  font-weight:500;
+}
 
-    /* Descrição curta */
-    .descricao {
-      font-size: 16px;
-      color: #eaeaea;
-      margin-bottom: 36px; /* ajuste aplicado */
-      line-height: 1.45;
-    }
+h3.capitulo-subtitulo{
+  color:#fff;
+  font-size:24px;
+  font-weight:700;
+  letter-spacing:1.2px;
+  margin:0 0 24px;
+}
 
-    /* Subtítulos do corpo do capítulo */
-    h4.subtitulo {
-      color: #ffffff !important;
-      font-size: 18px;
-      font-weight: 800;
-      letter-spacing: 1.2px;
-      margin-top: 40px;
-      margin-bottom: 18px;
-      text-transform: uppercase;
-    }
+h4.subtitulo{
+  color:#fff;
+  font-size:18px;
+  font-weight:800;
+  letter-spacing:1.2px;
+  margin-top:40px;
+  margin-bottom:18px;
+  text-transform:uppercase;
+}
 
-    p {
-      margin: 14px auto;
-      font-size: 18px;
-      line-height: 1.45;
-      letter-spacing: 0.1px;
-      color: #eaeaea;
-    }
+p{
+  margin:14px auto;
+  font-size:18px;
+  line-height:1.45;
+  color:#eaeaea;
+}
 
-    .imagem-vmp {
-      display: block;
-      margin: 30px auto 40px;
-      max-width: 100%;
-      border-radius: 6px;
-      aspect-ratio: 4 / 5;
-      object-fit: cover;
-    }
+/* IMAGEM PADRÃO */
+.imagem{
+  display:block;
+  margin:30px auto 40px;
+  width:100%;
+  max-width:420px;
+  aspect-ratio:4/5;
+  min-height:260px;
+  object-fit:cover;
+  border-radius:8px;
+  background:#111;
+  border:1px solid #FFD700;
+}
 
-    .fim-capitulo {
-      margin-bottom: 72px;
-    }
+.fim-capitulo{
+  margin-bottom:72px;
+}
 
-    .botao {
-      display: inline-block;
-      margin: 70px auto 20px;
-      padding: 18px 52px;
-      background-color: #FFD700;
-      color: #000;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 999px;
-      font-size: 17px;
-      letter-spacing: 0.5px;
-    }
+.botao{
+  display:inline-block;
+  margin:60px auto 20px;
+  padding:18px 52px;
+  background:#FFD700;
+  color:#000;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:999px;
+  font-size:17px;
+}
 
-    .botao:hover {
-      opacity: 0.9;
-    }
+.botao:hover{opacity:0.9;}
 
-    @media (max-width: 600px) {
-      h1 { font-size: 32px; }
-      h2.capitulo-titulo { font-size: 20px; }
-      h3.capitulo-subtitulo { font-size: 22px; }
-      h4.subtitulo { font-size: 17px; }
-      p, .descricao { font-size: 16px; }
-    }
-  </style>
+@media(max-width:600px){
+  h1{font-size:32px;}
+  h2.capitulo-titulo{font-size:20px;}
+  h3.capitulo-subtitulo{font-size:22px;}
+  h4.subtitulo{font-size:17px;}
+  p,.mini-descricao{font-size:16px;}
+}
+</style>
 </head>
 
 <body>
 
-  <!-- 🔐 BLOQUEIO DE ACESSO -->
-  <script>
-    if (sessionStorage.getItem("vmp7_acesso") !== "ok") {
-      window.location.href = "acesso.html";
-    }
-  </script>
+<script>
+if(sessionStorage.getItem("vmp7_acesso") !== "ok"){
+  window.location.href="acesso.html";
+}
+</script>
 
-  <div class="vmp-content">
+<div class="vmp-content">
 
-<!-- Título do Dia -->
-<h1>DIA VII</h1>
+  <h1>DIA VII</h1>
 
-<!-- Mini descrição do capítulo -->
-<p class="descricao">
-  Observe como o externo reage ao seu estado interno. Este capítulo ensina a perceber e manter coerência silenciosa mesmo com estímulos ao redor.
+<section class="ativacao">
+
+<div class="linha-superior">FASE VII</div>
+
+<p class="mini-descricao">
+O interno passa a guiar o externo.<br>
+O eixo define reações sem esforço.<br>
+O ambiente responde antes de qualquer ação.<br>
+A coerência agora se mantém com você.
 </p>
 
-<!-- Título do capítulo (dourado) -->
 <h2 class="capitulo-titulo">O EXTERNO QUE GUIA E RESPONDE</h2>
-
-<!-- Subtítulo do capítulo (branco) -->
 <h3 class="capitulo-subtitulo">REFLEXO DO ESTADO INTERNO</h3>
 
-<!-- Placeholder de imagem -->
-<img src="img/placeholder.png" alt="" class="imagem-vmp">
+<img src="img/plancheco7.jpg" class="imagem"
+onerror="this.src='img/placeholder.png'">
 
-<!-- Texto do capítulo -->
 <p>
-  O ambiente muda sem aviso.<br>
-  Movimentos circulam, gestos surgem.<br>
-  O ritmo interno permanece constante.<br>
-  Você percebe a reação ao redor.<br>
-  Nada exige intervenção.<br>
-  O espaço se ajusta silencioso.
+O ambiente muda sem aviso.<br>
+Movimentos circulam, gestos surgem.<br>
+O ritmo interno permanece constante.<br>
+Você percebe a reação ao redor.<br>
+Nada exige intervenção.<br>
+O espaço se ajusta silencioso.
 </p>
 
 <h4 class="subtitulo">REALINHAMENTO:</h4>
 <p>
-  Expressão externa segue o interno.<br>
-  Oscilações mínimas refletem o estado.<br>
-  O eixo interno define padrões sutis.<br>
-  Movimentos do grupo ajustam-se naturalmente.<br>
-  O campo responde antes de qualquer ação.<br>
-  A coerência interna sustenta o externo.<br>
-  O externo conduz de forma natural.<br>
-  A resposta passa a pesar.
+Expressão externa segue o interno.<br>
+Oscilações mínimas refletem o estado.<br>
+O eixo interno define padrões sutis.<br>
+Movimentos do grupo ajustam-se naturalmente.<br>
+O campo responde antes de qualquer ação.<br>
+A coerência interna sustenta o externo.<br>
+O externo conduz de forma natural.<br>
+A resposta passa a pesar.
 </p>
 
 <h4 class="subtitulo">INSTALAÇÃO:</h4>
 <p>
-  Deixe expressão seguir eixo.<br>
-  Sinta influência do centro.<br>
-  Não force o externo.<br>
-  O movimento se organiza.
+Deixe expressão seguir eixo.<br>
+Sinta influência do centro.<br>
+Não force o externo.<br>
+O movimento se organiza.
 </p>
 
 <h4 class="subtitulo">REFINAMENTO:</h4>
 <p>
-  Pessoas se movimentam ao redor.<br>
-  A expressão acompanha o centro interno.<br>
-  Você observa sem ceder.<br>
-  Reações surgem naturalmente.<br>
-  O campo se ajusta silencioso.
+Pessoas se movimentam ao redor.<br>
+A expressão acompanha o centro interno.<br>
+Você observa sem ceder.<br>
+Reações surgem naturalmente.<br>
+O campo se ajusta silencioso.
 </p>
 
 <h4 class="subtitulo">SUSTENTAÇÃO:</h4>
 <p>
-  O externo conduz naturalmente.<br>
-  A resposta pesa.
+O externo conduz naturalmente.<br>
+A resposta pesa.
 </p>
 
 <div class="fim-capitulo"></div>
 
 <div class="encerramento">
-  <h1 style="color:#FFD700; font-size:38px; margin-bottom:16px;">CICLO CONCLUÍDO</h1>
-  <p>
-    Você completou o VMP 7 Dias.<br>
-    Sua presença silenciosa agora é inabalável.<br>
-    Prepare-se: o <strong style="color:#FFD700;">VMP 21 Ativações completa</strong> reinstala seu <strong>controle interno</strong>, <strong>consistência</strong> e <strong>presença sustentada</strong>... ao nível máximo.
-  </p>
+  <h1 style="color:#FFD700; letter-spacing:2px;">
+CICLO CONCLUÍDO
+</h1>
+
+<p>
+Você completou o VMP 7 Dias.<br>
+Sua presença silenciosa agora é inabalável.<br><br>
+
+Prepare-se para o
+<strong style="color:#FFD700;">VMP 21 Ativações Completa</strong>,
+onde controle interno,
+consistência
+e presença sustentada
+são instalados em nível máximo.
+</p>
 </div>
+
+</section>
+
 </div> <!-- Fecha .vmp-content -->
 </body>
 </html>
+  
