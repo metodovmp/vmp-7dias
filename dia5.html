@@ -1,201 +1,200 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>VMP — 7 Dias</title>
+<meta charset="UTF-8">
+<title>VMP — 7 Dias</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- AJUSTE MOBILE -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+  background:#000;
+  color:#fff;
+  font-family:Arial,sans-serif;
+  margin:0;
+  padding:0;
+  line-height:1.55;
+}
 
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.55;
-    }
+.vmp-content{
+  max-width:640px;
+  margin:0 auto;
+  padding:36px 18px;
+  text-align:center;
+}
 
-    .vmp-content {
-      max-width: 640px;
-      margin: 0 auto;
-      padding: 36px 18px;
-      text-align: center;
-    }
+/* DIA */
+h1{
+  color:#FFD700;
+  font-size:38px;
+  letter-spacing:2.5px;
+  margin:0 0 20px;
+  font-weight:700;
+}
 
-    /* Dia em dourado */
-    h1 {
-      color: #FFD700;
-      font-size: 38px;
-      letter-spacing: 2.5px;
-      margin: 0 0 8px;
-      font-weight: 700;
-    }
+/* BLOCO DE CAPÍTULO */
+.ativacao{
+  margin-bottom:80px;
+}
 
-    /* Título do capítulo (dourado) */
-    h2.capitulo-titulo {
-      color: #FFD700;
-      font-size: 22px;
-      letter-spacing: 1.4px;
-      margin: 0 0 16px;
-      font-weight: 500;
-    }
+/* Mini descrição */
+.mini-descricao{
+  color:rgba(255,255,255,0.45);
+  font-size:16px;
+  margin-bottom:28px;
+  line-height:1.5;
+}
 
-    /* Subtítulo do capítulo (branco) */
-    h3.capitulo-subtitulo {
-      color: #ffffff;
-      font-size: 24px;
-      font-weight: 700;
-      letter-spacing: 1.2px;
-      margin: 0 0 24px;
-    }
+/* Títulos */
+h2.capitulo-titulo{
+  color:#FFD700;
+  font-size:22px;
+  letter-spacing:1.4px;
+  margin:0 0 16px;
+  font-weight:500;
+}
 
-    /* Descrição curta */
-    .descricao {
-      font-size: 16px;
-      color: #eaeaea;
-      margin-bottom: 36px; /* ajuste aplicado */
-      line-height: 1.45;
-    }
+h3.capitulo-subtitulo{
+  color:#fff;
+  font-size:24px;
+  font-weight:700;
+  letter-spacing:1.2px;
+  margin:0 0 24px;
+}
 
-    /* Subtítulos do corpo do capítulo */
-    h4.subtitulo {
-      color: #ffffff !important;
-      font-size: 18px;
-      font-weight: 800;
-      letter-spacing: 1.2px;
-      margin-top: 40px;
-      margin-bottom: 18px;
-      text-transform: uppercase;
-    }
+h4.subtitulo{
+  color:#fff;
+  font-size:18px;
+  font-weight:800;
+  letter-spacing:1.2px;
+  margin-top:40px;
+  margin-bottom:18px;
+  text-transform:uppercase;
+}
 
-    p {
-      margin: 14px auto;
-      font-size: 18px;
-      line-height: 1.45;
-      letter-spacing: 0.1px;
-      color: #eaeaea;
-    }
+p{
+  margin:14px auto;
+  font-size:18px;
+  line-height:1.45;
+  color:#eaeaea;
+}
 
-    .imagem-vmp {
-      display: block;
-      margin: 30px auto 40px;
-      max-width: 100%;
-      border-radius: 6px;
-      aspect-ratio: 4 / 5;
-      object-fit: cover;
-    }
+/* IMAGEM PADRÃO */
+.imagem{
+  display:block;
+  margin:30px auto 40px;
+  width:100%;
+  max-width:420px;
+  aspect-ratio:4/5;
+  min-height:260px;
+  object-fit:cover;
+  border-radius:8px;
+  background:#111;
+  border:1px solid #FFD700;
+}
 
-    .fim-capitulo {
-      margin-bottom: 72px;
-    }
+.fim-capitulo{
+  margin-bottom:72px;
+}
 
-    .botao {
-      display: inline-block;
-      margin: 70px auto 20px;
-      padding: 18px 52px;
-      background-color: #FFD700;
-      color: #000;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 999px;
-      font-size: 17px;
-      letter-spacing: 0.5px;
-    }
+.botao{
+  display:inline-block;
+  margin:60px auto 20px;
+  padding:18px 52px;
+  background:#FFD700;
+  color:#000;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:999px;
+  font-size:17px;
+}
 
-    .botao:hover {
-      opacity: 0.9;
-    }
+.botao:hover{opacity:0.9;}
 
-    @media (max-width: 600px) {
-      h1 { font-size: 32px; }
-      h2.capitulo-titulo { font-size: 20px; }
-      h3.capitulo-subtitulo { font-size: 22px; }
-      h4.subtitulo { font-size: 17px; }
-      p, .descricao { font-size: 16px; }
-    }
-  </style>
+@media(max-width:600px){
+  h1{font-size:32px;}
+  h2.capitulo-titulo{font-size:20px;}
+  h3.capitulo-subtitulo{font-size:22px;}
+  h4.subtitulo{font-size:17px;}
+  p,.mini-descricao{font-size:16px;}
+}
+</style>
 </head>
 
 <body>
 
-  <!-- 🔐 BLOQUEIO DE ACESSO -->
-  <script>
-    if (sessionStorage.getItem("vmp7_acesso") !== "ok") {
-      window.location.href = "acesso.html";
-    }
-  </script>
+<script>
+if(sessionStorage.getItem("vmp7_acesso") !== "ok"){
+  window.location.href="acesso.html";
+}
+</script>
 
-  <div class="vmp-content">
+<div class="vmp-content">
 
-    <!-- Título do Dia -->
-<h1>DIA V</h1>
+  <h1>DIA V</h1>
 
-<!-- Mini descrição do capítulo -->
-<p class="descricao">
-  Desenvolva postura íntegra e coerência interna. Este capítulo ensina a manter alinhamento e presença, mesmo com movimentos externos dispersos.
-</p>
+<section class="ativacao">
 
-<!-- Título do capítulo (dourado) -->
+<div class="linha-superior">FASE V</div>
+
+  <p class="mini-descricao">
+A integridade começa no corpo.<br>
+O alinhamento interno sustenta presença.<br>
+Postura firme se estabelece sem rigidez.<br>
+O ambiente responde à coerência que se firma em você.
+  </p>
+
 <h2 class="capitulo-titulo">INTEGRIDADE ESTRUTURAL DO CORPO</h2>
-
-<!-- Subtítulo do capítulo (branco) -->
 <h3 class="capitulo-subtitulo">ALINHAMENTO QUE SUSTENTA</h3>
 
-<!-- Placeholder de imagem -->
-<img src="img/placeholder.png" alt="" class="imagem-vmp">
+<img src="img/plancheco5.jpg" class="imagem"
+onerror="this.src='img/placeholder.png'">
 
-<!-- Texto do capítulo -->
 <p>
-  O grupo conversa disperso.<br>
-  Gestos se ajustam sem esforço.<br>
-  Olhares medem o espaço.<br>
-  Movimentos seguem o fluxo natural.<br>
-  Você mantém postura íntegra.<br>
-  O ambiente percebe a estabilidade.
+O grupo conversa disperso.<br>
+Gestos se ajustam sem esforço.<br>
+Olhares medem o espaço.<br>
+Movimentos seguem o fluxo natural.<br>
+Você mantém postura íntegra.<br>
+O ambiente percebe a estabilidade.
 </p>
 
 <h4 class="subtitulo">REALINHAMENTO:</h4>
 <p>
-  Assentamento interno define reação.<br>
-  Postura firme sustenta presença.<br>
-  Movimentos externos refletem coerência.<br>
-  Centro alinhado mantém ritmo.<br>
-  Vacilações desaparecem de forma natural.<br>
-  O corpo não se deixa interferir.<br>
-  O eixo interno fixa o padrão.<br>
-  A atitude passa a pesar o espaço.
+Assentamento interno define reação.<br>
+Postura firme sustenta presença.<br>
+Movimentos externos refletem coerência.<br>
+Centro alinhado mantém ritmo.<br>
+Vacilações desaparecem de forma natural.<br>
+O corpo não se deixa interferir.<br>
+O eixo interno fixa o padrão.<br>
+A atitude passa a pesar o espaço.
 </p>
 
 <h4 class="subtitulo">INSTALAÇÃO:</h4>
 <p>
-  Observe.<br>
-  Sinta integridade interna.<br>
-  Não busque validação.<br>
-  A postura se firma.
+Observe.<br>
+Sinta integridade interna.<br>
+Não busque validação.<br>
+A postura se firma.
 </p>
 
 <h4 class="subtitulo">REFINAMENTO:</h4>
 <p>
-  O grupo conversa disperso.<br>
-  Gestos e olhares se ajustam.<br>
-  Movimentos externos seguem seu ritmo.<br>
-  Você mantém postura íntegra.<br>
-  A coerência interna se manifesta.
+O grupo conversa disperso.<br>
+Gestos e olhares se ajustam.<br>
+Movimentos externos seguem seu ritmo.<br>
+Você mantém postura íntegra.<br>
+A coerência interna se manifesta.
 </p>
 
 <h4 class="subtitulo">SUSTENTAÇÃO:</h4>
 <p>
-  A atitude passa a pesar o espaço.<br>
-  O corpo sustenta coerência.
+A atitude passa a pesar o espaço.<br>
+O corpo sustenta coerência.
 </p>
 
 <div class="fim-capitulo"></div>
 
-<!-- Botão avançar -->
-<a href="dia6.html" class="botao">Avançar para o Dia VI</a>
+</section>
 
-</div> <!-- Fecha .vmp-content -->
-</body>
-</html>
+<a href="dia6.html" class="botao">Avançar para o Dia VI</a>
