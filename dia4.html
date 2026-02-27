@@ -1,201 +1,202 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>VMP — 7 Dias</title>
+<meta charset="UTF-8">
+<title>VMP — 7 Dias</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- AJUSTE MOBILE -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+  background:#000;
+  color:#fff;
+  font-family:Arial,sans-serif;
+  margin:0;
+  padding:0;
+  line-height:1.55;
+}
 
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.55;
-    }
+.vmp-content{
+  max-width:640px;
+  margin:0 auto;
+  padding:36px 18px;
+  text-align:center;
+}
 
-    .vmp-content {
-      max-width: 640px;
-      margin: 0 auto;
-      padding: 36px 18px;
-      text-align: center;
-    }
+/* DIA */
+h1{
+  color:#FFD700;
+  font-size:38px;
+  letter-spacing:2.5px;
+  margin:0 0 20px;
+  font-weight:700;
+}
 
-    /* Dia em dourado */
-    h1 {
-      color: #FFD700;
-      font-size: 38px;
-      letter-spacing: 2.5px;
-      margin: 0 0 8px;
-      font-weight: 700;
-    }
+/* BLOCO DE CAPÍTULO */
+.ativacao{
+  margin-bottom:80px;
+}
 
-    /* Título do capítulo (dourado) */
-    h2.capitulo-titulo {
-      color: #FFD700;
-      font-size: 22px;
-      letter-spacing: 1.4px;
-      margin: 0 0 16px;
-      font-weight: 500;
-    }
+/* Mini descrição */
+.mini-descricao{
+  color:rgba(255,255,255,0.45);
+  font-size:16px;
+  margin-bottom:28px;
+  line-height:1.5;
+}
 
-    /* Subtítulo do capítulo (branco) */
-    h3.capitulo-subtitulo {
-      color: #ffffff;
-      font-size: 24px;
-      font-weight: 700;
-      letter-spacing: 1.2px;
-      margin: 0 0 24px;
-    }
+/* Títulos */
+h2.capitulo-titulo{
+  color:#FFD700;
+  font-size:22px;
+  letter-spacing:1.4px;
+  margin:0 0 16px;
+  font-weight:500;
+}
 
-    /* Descrição curta */
-    .descricao {
-      font-size: 16px;
-      color: #eaeaea;
-      margin-bottom: 36px; /* ajuste aplicado */
-      line-height: 1.45;
-    }
+h3.capitulo-subtitulo{
+  color:#fff;
+  font-size:24px;
+  font-weight:700;
+  letter-spacing:1.2px;
+  margin:0 0 24px;
+}
 
-    /* Subtítulos do corpo do capítulo */
-    h4.subtitulo {
-      color: #ffffff !important;
-      font-size: 18px;
-      font-weight: 800;
-      letter-spacing: 1.2px;
-      margin-top: 40px;
-      margin-bottom: 18px;
-      text-transform: uppercase;
-    }
+h4.subtitulo{
+  color:#fff;
+  font-size:18px;
+  font-weight:800;
+  letter-spacing:1.2px;
+  margin-top:40px;
+  margin-bottom:18px;
+  text-transform:uppercase;
+}
 
-    p {
-      margin: 14px auto;
-      font-size: 18px;
-      line-height: 1.45;
-      letter-spacing: 0.1px;
-      color: #eaeaea;
-    }
+p{
+  margin:14px auto;
+  font-size:18px;
+  line-height:1.45;
+  color:#eaeaea;
+}
 
-    .imagem-vmp {
-      display: block;
-      margin: 30px auto 40px;
-      max-width: 100%;
-      border-radius: 6px;
-      aspect-ratio: 4 / 5;
-      object-fit: cover;
-    }
+/* IMAGEM PADRÃO */
+.imagem{
+  display:block;
+  margin:30px auto 40px;
+  width:100%;
+  max-width:420px;
+  aspect-ratio:4/5;
+  min-height:260px;
+  object-fit:cover;
+  border-radius:8px;
+  background:#111;
+  border:1px solid #FFD700;
+}
 
-    .fim-capitulo {
-      margin-bottom: 72px;
-    }
+.fim-capitulo{
+  margin-bottom:72px;
+}
 
-    .botao {
-      display: inline-block;
-      margin: 70px auto 20px;
-      padding: 18px 52px;
-      background-color: #FFD700;
-      color: #000;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 999px;
-      font-size: 17px;
-      letter-spacing: 0.5px;
-    }
+.botao{
+  display:inline-block;
+  margin:60px auto 20px;
+  padding:18px 52px;
+  background:#FFD700;
+  color:#000;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:999px;
+  font-size:17px;
+}
 
-    .botao:hover {
-      opacity: 0.9;
-    }
+.botao:hover{opacity:0.9;}
 
-    @media (max-width: 600px) {
-      h1 { font-size: 32px; }
-      h2.capitulo-titulo { font-size: 20px; }
-      h3.capitulo-subtitulo { font-size: 22px; }
-      h4.subtitulo { font-size: 17px; }
-      p, .descricao { font-size: 16px; }
-    }
-  </style>
+@media(max-width:600px){
+  h1{font-size:32px;}
+  h2.capitulo-titulo{font-size:20px;}
+  h3.capitulo-subtitulo{font-size:22px;}
+  h4.subtitulo{font-size:17px;}
+  p,.mini-descricao{font-size:16px;}
+}
+</style>
 </head>
 
 <body>
 
-  <!-- 🔐 BLOQUEIO DE ACESSO -->
-  <script>
-    if (sessionStorage.getItem("vmp7_acesso") !== "ok") {
-      window.location.href = "acesso.html";
-    }
-  </script>
+<script>
+if(sessionStorage.getItem("vmp7_acesso") !== "ok"){
+  window.location.href="acesso.html";
+}
+</script>
 
-  <div class="vmp-content">
+<div class="vmp-content">
 
-<!-- Título do Dia -->
-<h1>DIA IV</h1>
+  <h1>DIA IV</h1>
 
-<!-- Mini descrição do capítulo -->
-<p class="descricao">
-  Aprenda a manter firmeza e densidade interna mesmo sob pressão externa crescente. Este capítulo ensina como assentar-se sem ceder à instabilidade ao redor.
+<section class="ativacao">
+
+<div class="linha-superior">FASE IV</div>
+
+<p class="mini-descricao">
+A pressão externa começa a testar o eixo.<br>
+A densidade interna sustenta o ritmo.<br>
+Você mantém firmeza sem endurecer.<br>
+O ambiente responde ao estado que se ancora.
 </p>
 
-<!-- Título do capítulo (dourado) -->
 <h2 class="capitulo-titulo">ASSENTAMENTO SOB PRESSÃO</h2>
-
-<!-- Subtítulo do capítulo (branco) -->
 <h3 class="capitulo-subtitulo">DENSIDADE QUE NÃO CEDE</h3>
 
-<!-- Placeholder de imagem -->
-<img src="img/placeholder.png" alt="" class="imagem-vmp">
+<img src="img/plancheco1.jpg" class="imagem"
+onerror="this.src='img/placeholder.png'">
 
-<!-- Texto do capítulo -->
 <p>
-  Movimentos ao redor aceleram.<br>
-  Pressão cresce silenciosa.<br>
-  Você mantém o eixo firme.<br>
-  O corpo não reage por impulso.<br>
-  Nada se apressa.<br>
-  O campo ajusta-se naturalmente.
+Movimentos ao redor aceleram.<br>
+Pressão cresce silenciosa.<br>
+Você mantém o eixo firme.<br>
+O corpo não reage por impulso.<br>
+Nada se apressa.<br>
+O campo ajusta-se naturalmente.
 </p>
 
 <h4 class="subtitulo">REALINHAMENTO:</h4>
 <p>
-  A pressão surge no grupo.<br>
-  O eixo vacila levemente.<br>
-  A densidade interna sustenta.<br>
-  Tentativas externas não alteram.<br>
-  Assentar-se mantém coerência silenciosa.<br>
-  O centro permanece fixo.<br>
-  O externo se firma.<br>
-  O ritmo desacelera.
+A pressão surge no grupo.<br>
+O eixo vacila levemente.<br>
+A densidade interna sustenta.<br>
+Tentativas externas não alteram.<br>
+Assentar-se mantém coerência silenciosa.<br>
+O centro permanece fixo.<br>
+O externo se firma.<br>
+O ritmo desacelera.
 </p>
 
 <h4 class="subtitulo">INSTALAÇÃO:</h4>
 <p>
-  Sinta densidade interna.<br>
-  Mantenha centro firme.<br>
-  Não ceda à pressão externa.<br>
-  O estado se ancora.
+Sinta densidade interna.<br>
+Mantenha centro firme.<br>
+Não ceda à pressão externa.<br>
+O estado se ancora.
 </p>
 
 <h4 class="subtitulo">REFINAMENTO:</h4>
 <p>
-  Sala em movimento constante.<br>
-  O ritmo interno não oscila.<br>
-  Olhares se ajustam ao seu eixo.<br>
-  Você permanece firme por dentro.<br>
-  O ambiente se reorganiza silencioso.
+Sala em movimento constante.<br>
+O ritmo interno não oscila.<br>
+Olhares se ajustam ao seu eixo.<br>
+Você permanece firme por dentro.<br>
+O ambiente se reorganiza silencioso.
 </p>
 
 <h4 class="subtitulo">SUSTENTAÇÃO:</h4>
 <p>
-  O estado define o ritmo.<br>
-  O externo se firma.
+O estado define o ritmo.<br>
+O externo se firma.
 </p>
 
 <div class="fim-capitulo"></div>
 
-<!-- Botão avançar -->
+</section>
+
 <a href="dia5.html" class="botao">Avançar para o Dia V</a>
 
-</div> <!-- Fecha .vmp-content -->
-</body>
-</html> 
+  
